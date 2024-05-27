@@ -3,7 +3,6 @@ package tests;
 import org.testng.annotations.Test;
 import pages.MyAccountPage;
 public class MyAccountPageTest extends BaseTest {
-
     @Test(priority = 0)
     public void SearchSingleKeywordItem(){
         setupLogin();

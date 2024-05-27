@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 
 public class HomePageTest extends BaseTest {
-
     @Test(priority = 0)
     public void navigateToHomePage() {
         String expected = "https://www.singersl.com/";

@@ -13,7 +13,6 @@ public class SingleProductPage {
     WebDriver driver;
     WebDriverWait wait;
     By single_addto_cart = By.id("edit-order-now");
-    //By check_offers_button=By.partialLinkText("Check Offers");
     By check_offers_button=By.xpath("//body/div[6]/main[1]/div[1]/div[1]/div[2]/article[1]/div[1]/div[2]/div[8]/a[1]");
     By hsbc=By.xpath("//body/div[6]/main[1]/div[1]/div[1]/div[2]/article[1]/div[1]/div[2]/div[8]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/img[1]");
     By boc=By.xpath("//body/div[6]/main[1]/div[1]/div[1]/div[2]/article[1]/div[1]/div[2]/div[8]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/img[1]");
@@ -45,10 +44,6 @@ public class SingleProductPage {
         Thread.sleep(1000);
         driver.findElement(peoples).click();
         Thread.sleep(1000);
-//        JavascriptExecutor js=(JavascriptExecutor) driver;
-//        js.executeScript("window.scrollBy(0,-600)");
-//        driver.findElement(close_popup_button).click();
-//        Thread.sleep(1000);
     }
 
 

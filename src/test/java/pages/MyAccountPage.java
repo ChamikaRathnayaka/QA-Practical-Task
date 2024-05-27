@@ -12,7 +12,6 @@ public class MyAccountPage {
     WebDriverWait wait;
 
     By search_bar= By.id("edit-search");
-//    By search_icon=By.xpath("/html[1]/body[1]/div[3]/header[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[2]");
     By search_icon=By.className("search-icon");
     By no_result_text=By.xpath("//strong[contains(text(),'Sorry, no products available!')]");
     By add_cart_icon=By.xpath("//body/div[3]/main[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[2]/a[1]/img[1]");
@@ -23,7 +22,6 @@ public class MyAccountPage {
         this.driver=driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
-//    public boolean isHomepageLoaded(){return wait.until(ExpectedConditions.visibilityOfElementLocated(logout_button)).isDisplayed();}
     public void TextInSearchBar(String text){
         driver.findElement(search_bar).sendKeys(text);
     }

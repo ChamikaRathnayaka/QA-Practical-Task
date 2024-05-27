@@ -38,13 +38,13 @@ public class BaseTest {
         System.out.println("Clicked on login submit button");
     }
 
-//    @AfterTest
-//    public void tearDown() throws InterruptedException {
-//        if (driver != null) {
-//            Thread.sleep(5000);
-//            driver.quit();
-//            System.out.println("Closed Chrome browser");
-//        }
-//        System.out.println("Test case execution completed");
-//    }
+    @AfterTest
+    public void tearDown() throws InterruptedException {
+        if (driver != null) {
+            Thread.sleep(5000);
+            driver.quit();
+            System.out.println("Closed Chrome browser");
+        }
+        System.out.println("Test case execution completed");
+    }
 }

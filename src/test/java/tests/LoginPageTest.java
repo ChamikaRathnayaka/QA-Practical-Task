@@ -24,6 +24,7 @@ public class LoginPageTest extends BaseTest {
             loginpage.isMyAccountPageLoaded();
         }
     }
+
     @Test(priority = 1)
     public void EnterInValidPassword() {
         driver.navigate().back();
@@ -44,6 +45,7 @@ public class LoginPageTest extends BaseTest {
             loginpage.isMyAccountPageLoaded();
         }
     }
+
     @Test(priority = 2)
     public void EnterValidCredentials() {
         driver.navigate().back();
@@ -59,15 +61,4 @@ public class LoginPageTest extends BaseTest {
         loginpage.isMyAccountPageLoaded();
         System.out.println("Verified My Account page loaded");
     }
-
-
-
-//    @Test(priority = 1)
-//    public void clickSubmit() {
-//        LoginPage loginpage = new LoginPage(driver);
-//        loginpage.LoginButtonClick();
-//        System.out.println("Clicked on login submit button");
-//        loginpage.isMyAccountPageLoaded();
-//        System.out.println("Verified My Account page loaded");
-//    }
 }
