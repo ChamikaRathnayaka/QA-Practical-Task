@@ -1,45 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="none">
-    <test name="Home Page Test">
+    <test name="Complete Test Suite">
         <parameter name="env" value="DEFAULT"/>
         <classes>
             <class name="tests.HomePageTest"/>
-        </classes>
-    </test>
-    <test name="Login Page Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
             <class name="tests.LoginPageTest"/>
-        </classes>
-    </test>
-    <test name="MyAccount Page Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
-            <class name="tests.MyAccountPageTest"/>
-        </classes>
-    </test>
-    <test name="Header Bar Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
             <class name="tests.HeaderBarTest"/>
-        </classes>
-    </test>
-    <test name="Single Product Page Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
+            <class name="tests.MyAccountPageTest"/>
             <class name="tests.SingleProductPageTest"/>
-        </classes>
-    </test>
-    <test name="Cart Page Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
             <class name="tests.CartPageTest"/>
-        </classes>
-    </test>
-    <test name="Select address Page Test">
-        <parameter name="env" value="DEFAULT"/>
-        <classes>
             <class name="tests.SelectAddressTest"/>
         </classes>
     </test>
 </suite>
+

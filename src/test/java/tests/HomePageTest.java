@@ -12,7 +12,6 @@ public class HomePageTest extends BaseTest {
         Assert.assertEquals(actual, expected);
         System.out.println("Navigated to Home Page: " + actual);
     }
-
     @Test(priority = 1)
     public void validateLoginButton() {
         HomePage homepage = new HomePage(driver);

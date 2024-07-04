@@ -4,6 +4,7 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginPageTest extends BaseTest {
+
     @Test(priority = 0)
     public void EnterInValidEmail(){
         HomePage homepage = new HomePage(driver);
@@ -62,3 +63,5 @@ public class LoginPageTest extends BaseTest {
         System.out.println("Verified My Account page loaded");
     }
 }
+
+

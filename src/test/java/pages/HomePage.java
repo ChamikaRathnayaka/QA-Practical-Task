@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class HomePage {
     WebDriver driver = null;
     WebDriverWait wait;
@@ -14,6 +16,8 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-    public void loginButtonClick(){driver.findElement(login_button).sendKeys(Keys.RETURN);}
+
+    public void loginButtonClick() {wait.until(ExpectedConditions.visibilityOfElementLocated(login_button)).sendKeys(Keys.RETURN);}
 }
